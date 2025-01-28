@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    .box{
+      width: 200px;
+      height: 200px;
+    }
+    .line1{
+      height: 50vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .O1{
+      background-color: blue;
+      animation: O1 10s linear infinite alternate;
+    }
+    .T2{
+    background-color: blue;
+      animation: T2 10s linear infinite alternate;
+    }
+    .line2{
+      height: 50vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .T3{
+      background-color: yellow;
+      animation: T3 10s linear infinite alternate;
+    }
+    .F4{
+      background-color: yellow;
+      animation: F4 10s linear infinite alternate;
+    }
+    @keyframes O1 {
+      0% {
+        translate: 300px 300px;
+      }
+      100% {
+        transform: scale(2);
+        border-radius: 50%;
+      }
+    }
+    @keyframes T2 {
+      0%{
+        translate: -300px 300px;
+      }
+      100%{
+        transform: scale(2);
+        border-radius: 50%;
+      }
+    }
+    @keyframes T3 {
+      0%{
+        translate: 300px -300px;
+      }
+      100%{
+        transform: scale(2);
+        border-radius: 50%;
+      }
+    }
+    @keyframes F4 {
+      0%{
+        translate: -300px -300px;
+      }
+      100%{
+        transform: scale(2);
+        border-radius: 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="line1">
+  <div class="box O1"></div>
+  <div class="box T2"></div>
+</div>
+<div class="line2">
+  <div class="box T3"></div>
+  <div class="box F4"></div>
+</div>
+</body>
+</html>
