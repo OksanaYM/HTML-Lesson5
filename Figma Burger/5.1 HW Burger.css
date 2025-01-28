@@ -127,7 +127,7 @@ h2{
     height: 753px;
     border-radius: 30px;
     border: 4px solid #E9E3DC;
-    background: url('./img Burger/16.png') lightgray 50% / cover no-repeat, #B3A0CD;
+    background: #B3A0CD;
 }
 .footer{
     display: flex;
